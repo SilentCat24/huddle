@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Karla:ital@0;1&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;700&family=Spartan:wght@400;500&display=swap');
+
+
+
+*,*::after,
+*::before{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-size:16px;
+}
+body{
+  display:flex;
+  /* flex-direction:column; */
+  justify-content:center;
+align-items:center;
+font-family: 'Poppins', sans-serif;
+background-image: url(../images/bg-desktop.svg);
+background-color:var(--clr--Violet);
+}
+
+:root{
+  font-family: 'Poppins', sans-serif;
+  --clr--Violet: hsl(257, 40%, 49%);
+  --clr--Soft-Magenta: hsl(300, 69%, 71%);
+}
+.container{
+  text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+margin:1rem;
+max-width:1200px;
+
+}
+.picture{
+  width:50%;
+  text-align:center;
+}
+
+.content{
+  display:flex;
+   flex-direction:column; 
+  color:white;
+  width:50%;
+}
+.logo{
+  display:flex;
+  flex:flex-start;
+margin:1rem;
+}
+
+.pic-2 .image{
+width:550px;
+padding:1rem;
+height:30rem;
+}
+
+.content h1{
+font-size: 1.8rem;
+}
+.content p{
+padding:2.4rem;
+text-align:center;
+font-size: 1rem;
+}
+
+
+button{
+  border:2px solid white;
+  border-radius:10px;
+width:8rem;
+ 
+}
+button:hover{
+background-color:pink;
+
+}
+button a{
+  font-size:1.3rem;
+  padding:1rem;
+}
+
+.links{
+display:flex;
+justify-content: flex-end;
+margin-top:10rem;
+
+}
+
+.links a{
+  color:white;
+
+  border:1px solid white;
+ padding:0.3rem;
+   margin:0.5rem; 
+   
+   border-radius:70%;
+}
+
+@media(max-width:900px){
+  .container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+   
+  }
+  .picture{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.content{
+ width:80%;
+  
+}
+.pic-2 .image{
+  width:400px;
+  
+  
+}
+.picture{
+  display:flex;
+  flex-direction:column;
+  flex:flex-start;
+}
+
+.links{
+  display:flex;
+justify-content: center;
+}
+
+}
+ 
+
